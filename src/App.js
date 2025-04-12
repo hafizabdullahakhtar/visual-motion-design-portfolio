@@ -11,7 +11,6 @@ import StorePage from "./PAGES/store_page/StorePage";
 import AboutMePage from "./PAGES/aboutme_page/AboutMePage";
 import ExperimentsPage from "./PAGES/experiments_page/ExperimentsPage";
 import MotionProjects from "./PAGES/projects_page/MotionProjects";
-import DesignProjects from "./PAGES/projects_page/DesignProjects";
 import BookingPage from "./PAGES/booking_page/BookingPage";
 import BrandingProjects from "./PAGES/branding_projects_page/BrandingProjects";
 
@@ -28,7 +27,6 @@ function App() {
               path="/branding-projects"
               element={<BrandingProjects />}
             />
-            {/* <Route path="/design-projects" element={<DesignProjects />} /> */}
             <Route path="/store" element={<StorePage />} />
             <Route path="/about-me" element={<AboutMePage />} />
             <Route path="/experiments" element={<ExperimentsPage />} />
