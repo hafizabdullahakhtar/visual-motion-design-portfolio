@@ -1,0 +1,178 @@
+.branding_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* z-index: 999; */
+}
+
+.branding_modal_content {
+  position: relative;
+  background-color: white;
+  width: 90%;
+  max-width: 1000px;
+  height: 90%;
+  max-height: 600px;
+
+  border-radius: 24px;
+  padding: 60px;
+  overflow: auto;
+}
+
+.branding_modal_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.branding_modal_left_section,
+.branding_modal_right_section {
+  display: flex;
+  flex-direction: column;
+  height: min-content;
+
+}
+
+.branding_modal_left_section {
+  flex: 2;
+  gap: 0.5rem;
+  position: static;
+  height: min-content;
+}
+
+.branding_modal_right_section {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  border-radius: 1rem;
+}
+
+.branding_modal_project_name {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.branding_modal_project_category {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--accent-color);
+}
+
+.branding_modal_project_summary_heading {
+  /* margin-top: 1rem; */
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.branding_modal_project_summary {
+  font-size: 15px;
+}
+
+.branding_modal_my_role {
+  margin-top: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.branding_role-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.branding_modal_images_container {
+  width: 100%;
+}
+
+.branding_modal_images {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+}
+
+.branding_modal_images img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* border-radius: 1rem; */
+}
+
+.branding_related_videos {
+  display: flex;
+  /* height: 100px; */
+}
+
+
+/* Close Button */
+.branding_close_button {
+  position: absolute !important;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--grey-color);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+}
+
+.branding_close_button:hover {
+  background-color: var(--background-color);
+  border: 1px solid var(--ui-border-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .branding_branding_modal_content {
+    flex-direction: column;
+    height: min-content;
+  }
+
+  .branding_modal_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    flex-grow: 1;
+    overflow: visible;
+  }
+
+  .branding_related_videos {
+    margin-top: 10px;
+  }
+
+  .branding_modal_right_section {
+    width: 100%;
+  }
+
+  .branding_modal_left_section {
+    width: 100%;
+    height: min-content;
+  }
+
+  .modal_inner {
+    flex-direction: column;
+  }
+
+  .modal_right_section,
+  .modal_left_section {
+    width: 100%;
+  }
+}

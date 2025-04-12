@@ -1,0 +1,204 @@
+.footer-container {
+  z-index: 1;
+  position: relative; /* Ensure tooltip is positioned relative to this container */
+}
+
+.footer-menu {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px;
+  border: 1px solid var(--background-color);
+  border-radius: 24px;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+  background-color: var(--glass-color);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.icon-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  align-items: stretch;
+  position: relative;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    border-color 0.3s ease;
+  border: 1px solid var(--ui-border-color);
+  box-shadow: 0px 4px 8px var(--ui-border-color);
+}
+
+.icon:hover {
+  transform: scale(1.05);
+}
+
+.divider {
+  width: 1px;
+  background-color: var(--ui-border-color);
+}
+
+.email:hover {
+  background-color: rgb(184, 228, 180);
+  border-color: rgb(97, 136, 94);
+}
+
+.behance:hover {
+  background-color: rgb(156, 180, 236);
+  border-color: rgb(90, 107, 148);
+}
+
+.dribbble:hover {
+  background-color: rgb(251, 171, 235);
+  border-color: rgb(162, 96, 149);
+}
+
+.toggle-icon-container {
+  padding: 8px;
+}
+
+@media (max-width: 600px) {
+  .icon.email,
+  .icon.behance,
+  .icon.dribbble,
+  .tooltip {
+    display: none;
+  }
+}
+
+.icon.selected {
+  background-color: grey;
+  color: white;
+}
+
+.icon.home.selected,
+.icon.home:hover {
+  background-color: rgb(250, 201, 156);
+  border-color: rgb(176, 134, 94);
+}
+
+.icon.projects.selected,
+.icon.projects:hover {
+  background-color: rgb(209, 184, 255);
+  border-color: rgb(138, 115, 182);
+}
+
+.icon.branding-projects.selected,
+.icon.branding-projects:hover {
+  background-color: rgb(248, 169, 168);
+  border-color: rgb(185, 109, 108);
+}
+
+.icon.br.selected,
+.icon.branding:hover {
+  background-color: rgb(248, 169, 168);
+  border-color: rgb(185, 109, 108);
+}
+
+.icon.aboutme.selected,
+.icon.aboutme:hover {
+  background-color: rgb(156, 203, 245);
+  border-color: rgb(91, 134, 172);
+}
+
+.tooltip {
+  font-family: "Figtree";
+  position: absolute;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border: 1px solid var(--background-color);
+  border-radius: 8px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.newwindow {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.newWindowIcon {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 12px;
+  z-index: 2;
+}
+
+/* For small screen toggle and vertical menu */
+@media (max-width: 600px) {
+  .footer-menu {
+    display: none;
+  }
+
+  .footer-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--glass-color, rgba(255, 255, 255, 0.1));
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+  .footer-menu-small {
+    position: fixed;
+    top: 72px;
+    right: 16px;
+    background-color: var(--glass-color, rgba(255, 255, 255, 0.15));
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    z-index: 1000;
+  }
+
+  .footer-menu-small.open {
+    display: flex;
+  }
+
+  .footer-menu-small .icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* For screens larger than 300px, hide the collapsed menu and show the default footer */
+@media (min-width: 301px) {
+  .footer-toggle {
+    display: none; /* Hide the toggle button */
+  }
+
+  .footer-menu-small {
+    display: none; /* Hide the small menu */
+  }
+
+  .footer-menu {
+    display: flex; /* Show the default footer */
+  }
+}

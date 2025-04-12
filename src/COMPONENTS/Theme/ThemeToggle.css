@@ -1,0 +1,18 @@
+.theme-toggle {
+  position: absolute;
+  z-index: 1;
+  top: 1rem;
+  right: 1rem;
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  /* border: 2px solid var(--foreground-color); */
+  color: rgba(255, 255, 255, 1);
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  transition: none;
+  overflow: hidden;
+  width: fit-content;
+}

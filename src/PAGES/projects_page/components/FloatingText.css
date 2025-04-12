@@ -1,0 +1,15 @@
+.floating-text {
+  display: inline-block;
+  position: relative;
+}
+
+.floating-char {
+  display: inline-block;
+  position: relative;
+  margin: 0 2px;
+  filter: hue-rotate(100deg);
+  border-radius: 16px;
+
+  text-shadow: 4px 2px 0px white, -2px 2px 0px white, 2px -2px 0px white,
+    -2px -2px 0px white;
+}

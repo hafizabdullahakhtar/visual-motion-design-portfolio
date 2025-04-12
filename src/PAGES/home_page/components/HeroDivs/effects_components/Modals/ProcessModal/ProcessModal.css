@@ -1,0 +1,29 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.step_heading {
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.step_description {
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.words:hover {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 600px) {
+  .step_heading {
+    font-size: 24px;
+    font-weight: 200;
+  }
+}

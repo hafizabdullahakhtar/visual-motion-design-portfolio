@@ -1,0 +1,201 @@
+.video_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 9990999999;
+}
+
+.video_modal_content {
+  position: relative;
+  background-color: white;
+  width: 90%;
+  max-width: 1000px;
+  height: 90%;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  padding: 60px;
+  overflow: auto;
+}
+
+.modal_inner {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  flex-grow: 1;
+}
+
+.modal_left_section,
+.modal_right_section {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_left_section {
+  flex: 2;
+  gap: 0.5rem;
+}
+
+.modal_right_section {
+  flex: 3;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.modal_project_name {
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.modal_project_category {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--accent-color);
+}
+
+.modal_project_summary_heading {
+  /* margin-top: 1rem; */
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.modal_project_summary {
+  font-size: 15px;
+}
+
+.modal_my_role {
+  margin-top: 1rem;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.role-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.modal_video_container video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.modal_video_player {
+  width: 100%;
+  height: auto;
+}
+
+/* Override Plyr controls styles */
+.plyr--video .plyr__controls {
+  padding-block: 0.5rem;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background: rgba(255, 255, 255, 0.6) !important;
+  gap: 0.5rem;
+}
+
+.plyr__video-wrapper {
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--background-color);
+}
+
+.plyr__controls button {
+  color: black !important;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.plyr__time {
+  color: black !important;
+}
+
+/* Elapsed time bar color */
+.plyr__progress__buffer::before {
+  background-color: transparent;
+}
+
+/* Full time (buffer bar) color */
+.plyr__progress__buffer {
+  border-radius: 0px;
+  background-color: var(--light-color);
+  /* border: 1px solid black; */
+}
+
+/* Progress bar (buffered part) */
+.plyr__progress__buffer::after {
+  background-color: transparent;
+}
+
+/* Customization for browsers that support ::-webkit-progress */
+progress::-webkit-progress-bar {
+  background-color: transparent !important; /* Full duration background color */
+}
+
+progress::-webkit-progress-value {
+  background-color: transparent !important; /* Elapsed time color */
+}
+
+.modal_related_videos {
+  margin-top: 20px;
+}
+
+.related_videos {
+  display: flex;
+  /* height: 100px; */
+}
+
+.modal_additional_videos {
+  display: flex;
+}
+
+.additional_videos_list {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .video_modal_content {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .modal_inner {
+    flex-direction: column-reverse;
+  }
+
+  .related_videos {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .video_modal_content {
+    width: 95%;
+  }
+
+  .action_button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.videos_navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+}

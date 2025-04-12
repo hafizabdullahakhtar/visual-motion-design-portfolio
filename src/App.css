@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+/* FONTS  */
+@font-face {
+  font-family: "Figtree"; /* Name to be used in your CSS */
+  src: url("./ASSETS/FONTS/Figtree-VariableFont.ttf") format("truetype"); /* Path to your font file */
+  font-weight: 100 900; /* Define the range of weights available */
+  font-style: normal; /* You can specify normal, italic, or oblique if needed */
 }
 
-.App-logo {
-  height: 40vmin;
+@font-face {
+  font-family: "Inflate"; /* Name to be used in your CSS */
+  src: url("./ASSETS/FONTS/Inflate.ttf") format("truetype"); /* Path to your font file */
+}
+
+/* THEMES */
+
+body.modal-open {
+  overflow: hidden; /* Prevent background scrolling */
+}
+
+:root {
+  --background-color: #ffffff;
+  --ui-color: #fcfcfc;
+  --ui-border-color: #dfdfdf;
+
+  --foreground-color: #000000;
+  --accent-color: #1ca3de;
+  --hover-color: #000;
+  --glass-color: #fdfdfdbf;
+
+  --text-sec: #8c8c8c;
+
+  --grey-color: #f7f7f7;
+  --light-color: #a9a9a9;
+
+  --ASelectedColor: #fff;
+  --ARadius: 5px;
+  --tooltip-border-radius: 6px;
+  --tooltip-arrow-size: 5px;
+
+  /* --background-gradient: linear-gradient(
+    to right,
+    rgb(255, 252, 228),
+    rgb(255, 228, 248),
+    rgb(255, 248, 234),
+    rgb(238, 247, 255),
+    rgb(245, 245, 245)
+  ); */
+
+  --background-gradient: linear-gradient(
+    to right,
+    rgb(255, 252, 228),
+    rgb(255, 228, 248),
+    rgb(255, 248, 234),
+    rgb(238, 247, 255),
+    rgb(245, 245, 245)
+  );
+
+  --background-gradient-small-screen: linear-gradient(
+    to top,
+    rgb(255, 252, 228),
+    rgb(255, 228, 248),
+    rgb(255, 248, 234),
+    rgb(238, 247, 255),
+    rgb(245, 245, 245)
+  );
+
+  /* --bottom-gradient-light: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 60%,
+    rgba(239, 239, 239, 0.5) 80%,
+    rgb(236, 236, 236) 100%
+  ); */
+}
+
+[data-theme="dark"] {
+  --background-color: #000000;
+  --ui-color: #131313;
+  --ui-border-color: #191919;
+  --foreground-color: #ffffff;
+  --hover-color: #fff;
+  --glass-color: #121212bf;
+
+  --grey-color: #7c7c7c;
+  --light-color: #1b1b1b;
+
+  --ASelectedColor: #fff;
+  --ARadius: 5px;
+  --tooltip-border-radius: 6px;
+  --tooltip-arrow-size: 5px;
+
+  --background-gradient: linear-gradient(to right, black, rgb(24, 24, 24));
+  /* 
+  --bottom-gradient-light: linear-gradient(
+    to bottom,
+    rgba(27, 27, 27, 0) 0%,
+    rgba(58, 58, 58, 0) 60%,
+    rgb(0, 0, 0) 100%
+  ); */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: inherit;
+  -webkit-font-smoothing: antialiased;
+  background: var(--background-gradient);
+  font-family: "Figtree";
+}
+
+/* body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bottom-gradient-light);
   pointer-events: none;
+} */
+
+/* WebKit Browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 0px; /* Set the width of the scrollbar */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Firefox */
+.scrollable-element {
+  scrollbar-width: thin; /* Set scrollbar width to thin */
+  scrollbar-color: #888 #f1f1f1; /* Color of the scrollbar thumb and track */
 }

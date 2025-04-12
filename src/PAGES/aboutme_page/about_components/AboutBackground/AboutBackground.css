@@ -1,0 +1,36 @@
+.about-background {
+  width: 100%;
+  height: 100%;
+  color: var(--ui-border-color);
+  font-size: 24px;
+  overflow: hidden;
+}
+
+/* .mode-name {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
+.cv {
+  width: 100px;
+  height: 120px;
+  padding: 10px;
+}
+
+.preview {
+  width: 100%;
+  height: 80%;
+  background-color: var(--ui-border-color);
+  border-radius: 5px;
+}
+
+.show-cv {
+  font-family: "NeueMachinia";
+  font-size: 12px;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

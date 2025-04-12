@@ -1,0 +1,125 @@
+.expandheader_card {
+  margin: 0;
+  padding: 0;
+  padding: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.expandheader_card:hover {
+  box-shadow: 0px 0px 0px 3px rgb(234, 234, 234);
+}
+
+.expandheader_card_header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.expandheader_header_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.expandheader_header_image {
+  width: 100px;
+  height: 100px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.expandheader_header_text {
+  font-size: 20px;
+}
+
+.expandheader_subheader_text {
+  font-size: 0.75rem;
+  color: var(--text-sec);
+  margin-top: 0.5rem;
+  font-weight: 100;
+}
+
+.expandheader_moreheader_text {
+  font-size: 1rem;
+  color: var(--foreground-color);
+  margin-top: 0.5rem;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.expandheader_card_content {
+  margin-top: 1rem;
+  border-top: 1px solid var(--grey-color);
+}
+
+.sprint_explanation {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sprint_heading {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.sprint_subheading {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+@media (max-width: 600px) {
+  .expandheader_card {
+    margin: 0;
+    padding: 0;
+    padding: 8px;
+    border-radius: 1.2rem !important;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: box-shadow 0.2s;
+  }
+
+  .expandheader_card_header {
+    margin: 0;
+    padding: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .expandheader_header_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+
+  .expandheader_header_text {
+    font-size: 17px;
+    padding-inline: 8px;
+    padding-block: 0px;
+  }
+
+  .expandheader_subheader_text {
+    font-size: 0.75rem;
+    color: var(--text-sec);
+    font-weight: 100;
+    font-size: 13px;
+    padding-inline: 8px;
+    padding-bottom: 8px;
+  }
+
+  .expandheader_card_content{
+    padding-bottom: 1rem;
+  }
+}

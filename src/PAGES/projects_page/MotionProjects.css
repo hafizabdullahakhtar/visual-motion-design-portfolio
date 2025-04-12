@@ -1,0 +1,139 @@
+.motion_page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  height: auto;
+  width: 100vw;
+  /* overflow-y: auto; */
+  background: var(--background-gradient);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.motion_page::after {
+  background-color: var(--bottom-gradient-light);
+}
+
+.motion_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: fit-content;
+  gap: 1rem;
+}
+
+.filter_search_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.dropdown_new {
+  padding: 1rem;
+}
+
+.search_input {
+  padding: 12px 20px;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  border: 1px solid var(--grey-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  width: 200px;
+}
+
+/* Container for the filter buttons */
+.filter_section {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Style for each filter button */
+.filter_button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid var(--grey-color);
+  border-radius: 30px;
+  background-color: var(--background-color);
+  color: var(--text-sec);
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease, padding 0.3s ease;
+  outline: none;
+}
+
+/* Style for the selected button */
+.filter_button.selected {
+  background-color: var(--foreground-color);
+  color: var(--background-color);
+  border-color: var(--foreground-color);
+}
+
+/* Optional: Add a subtle hover effect */
+.filter_button:hover {
+  color: var(--foreground-color);
+  background-color: var(--background-color);
+  padding: 10px 24px;
+  border-color: var(--foreground-color);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .filter_search_section {
+    display: flex;
+    justify-content: left;
+    padding-inline: 1rem;
+  }
+
+  .filter_section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .filter_button {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid var(--grey-color);
+    border-radius: 30px;
+    background-color: var(--background-color);
+    color: var(--text-sec);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      border-color 0.3s ease, padding 0.3s ease;
+    outline: none;
+  }
+
+  .search_input,
+  .filter_dropdown {
+    width: 100%;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 760px) {
+  .motion_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: fit-content;
+    gap: 1rem;
+  }
+}

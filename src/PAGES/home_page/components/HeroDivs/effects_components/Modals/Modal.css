@@ -1,0 +1,171 @@
+/* Modal Background */
+.modal-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: backdrop-filter 1s ease;
+}
+
+/* Modal Content Wrapper */
+.modal-content-wrapper {
+  position: absolute;
+  top: 1rem;
+  width: 38%;
+  height: 85%;
+  max-height: 900px;
+  overflow: hidden;
+  border-radius: 24px !important;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: 0 auto;
+  height: 100%;
+  max-height: 900px;
+  padding: 3rem !important;
+  border-radius: 24px !important;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+}
+
+/* Modal Heading */
+.heading {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Modal Detail */
+.modal_detail {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: var(--light-color);
+}
+
+/* Modal List */
+.modal_list {
+  margin-top: 0.5rem;
+  color: var(--light-color);
+  font-weight: 600;
+}
+
+.modal_list ul {
+  padding-left: 2rem;
+}
+
+.modal_list ul li {
+  margin-bottom: 0.5rem;
+}
+
+.modal_list ul li:last-child {
+  margin-bottom: 0;
+}
+
+/* Modal Service Cards */
+.modal_service_cards {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Close Button */
+.close_button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--grey-color);
+  border: 1px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+}
+
+.close_button:hover {
+  background-color: var(--background-color);
+  border: 1px solid var(--ui-border-color);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* WebKit Scrollbar Styling */
+.modal-content::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background: transparent; /* Background color of the track */
+  border-radius: 10px; /* Rounded corners of the track */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background: var(--light-color); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded corners of the thumb */
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+  background: var(
+    --foreground-color
+  ); /* Color of the scrollbar thumb on hover */
+}
+
+.step {
+  padding: 1rem;
+}
+
+.deliverables {
+  font-weight: 100;
+  padding-block: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .modal-content-wrapper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 992px) {
+  .modal-content-wrapper {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-content-wrapper {
+    width: 90%;
+    /* top: 0.5rem; */
+  }
+  .modal-content {
+    padding: 3rem 1rem !important;
+  }
+  .modal_detail,
+  .modal_list,
+  .modal_service_cards {
+    font-size: 14px !important;
+  }
+}

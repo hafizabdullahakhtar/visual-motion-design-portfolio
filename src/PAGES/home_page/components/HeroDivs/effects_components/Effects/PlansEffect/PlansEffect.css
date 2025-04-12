@@ -1,0 +1,93 @@
+/* .plans_effect {
+  width: 99vw;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.three_contaniers {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.plans-effect-container {
+  width: calc(4rem + 60vw);
+}
+
+.chips-container {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+}
+
+.right {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.left {
+  align-items: flex-end;
+  justify-content: flex-end;
+} */
+
+.plans_effect {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.three_containers {
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  width: calc(
+    6rem + 75vw
+  ); /* This ensures there is space between left and right containers */
+}
+
+.chips-container {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.right {
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.plans-effect-container {
+  flex: 1; /* This will take up the remaining space between left and right containers */
+  /* Add any styles needed for the center container here */
+}
+
+@media (max-width: 1400px) {
+  .three_containers {
+    width: 95vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  .three_containers {
+    width: 100vw;
+    height: 400px;
+  }
+}
+
+@media (max-width: 800px) {
+  .three_containers {
+    width: 80vw;
+    height: 500px;
+  }
+}

@@ -1,0 +1,50 @@
+.reecognition-effect {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image-container {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  opacity: 0.8;
+}
+
+/* Position the images on the screen */
+.img1 {
+  top: 10%;
+  left: 5%;
+  transform: rotate(10deg);
+}
+
+.img2 {
+  bottom: 10%;
+  left: 5%;
+  transform: rotate(10deg) scale(1.2);
+}
+
+.img3 {
+  top: 10%;
+  right: 5%;
+  transform: rotate(-5deg) scale(1.2);
+}
+
+.img4 {
+  bottom: 5%;
+  right: 5%;
+  transform: rotate(-5deg);
+}

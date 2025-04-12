@@ -1,0 +1,58 @@
+.shape {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  color: #333;
+  animation: float 6s ease-in-out infinite;
+  transition: border 0.3s ease;
+}
+
+.shape:hover {
+  border: 2px solid #e5e5e5;
+}
+
+/* Circle Shape */
+.circle {
+  width: 6rem; /* 24 (Tailwind w-24) */
+  height: 6rem;
+  border-radius: 50%;
+  background-color: white;
+}
+
+/* Square Shape */
+.square {
+  width: 6rem;
+  height: 6rem;
+  background-color: white;
+}
+
+/* Triangle Shape (using clip-path instead of borders) */
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 48px solid transparent;
+  border-right: 48px solid transparent;
+  border-bottom: 84px solid white;
+}
+
+/* Subtle floating animation */
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, -10px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  75% {
+    transform: translate(-5px, -10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
