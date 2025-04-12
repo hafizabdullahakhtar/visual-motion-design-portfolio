@@ -1,6 +1,3 @@
-// Example: HomePage.js
-import React from "react";
-
 const StorePage = () => {
   return (
     <div

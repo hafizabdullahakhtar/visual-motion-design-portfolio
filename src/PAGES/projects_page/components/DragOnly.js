@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 
 const DraggableOnly = ({ children, easingFactor = 0.08 }) => {
   const [isDragging, setIsDragging] = useState(false);

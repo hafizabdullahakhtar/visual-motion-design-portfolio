@@ -1,5 +1,3 @@
-import React from "react";
-
 const EmailButton = () => {
   // Replace with your email address and desired subject/body
   const email = "mailsendkrdo@gmail.com"; // Replace with your email

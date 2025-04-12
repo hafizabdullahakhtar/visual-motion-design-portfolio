@@ -1,5 +1,3 @@
-import React from "react";
-
 const EmailIcon = (props) => (
   <svg
     width="24"

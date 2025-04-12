@@ -1,5 +1,3 @@
-import React from "react";
-
 const StoreIcon = (props) => (
   <svg
     width="22"

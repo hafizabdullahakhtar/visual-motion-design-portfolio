@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./BrandingProjects.css";
 import brandingProjectsData from "./brandingProjectsData";
-import VideoModal from "./components/BrandingModal";
 import SingleProject from "./components/SingleProject";
 import BrandingModal from "./components/BrandingModal";
-
 
 const BrandingProjects = () => {
   const [selectedProject, setSelectedProject] = useState(null);

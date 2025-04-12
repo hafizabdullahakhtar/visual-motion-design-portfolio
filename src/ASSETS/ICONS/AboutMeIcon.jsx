@@ -1,5 +1,3 @@
-import React from "react";
-
 const AboutMeIcon = (props) => (
   <svg
     width="22"

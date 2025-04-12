@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutBackground.css";
 import AnimatedShapes from "../AnimatedShapes/AnimatedShapes";
 
@@ -23,7 +22,7 @@ const AboutBackground = ({
         return professionalIconNames[hoveredIcon] || "";
       }
     } else if (expanded) {
-      return  <AnimatedShapes />;
+      return <AnimatedShapes />;
     } else {
       return "Initial Mode";
     }

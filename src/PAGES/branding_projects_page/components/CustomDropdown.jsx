@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import "./CustomDropdown.css";
 
 const CustomDropdown = ({ options, selected, onSelect }) => {
@@ -17,7 +17,11 @@ const CustomDropdown = ({ options, selected, onSelect }) => {
   }, []);
 
   return (
-    <div className="custom_dropdown_wrapper" ref={dropdownRef} style={{ width: '250px' }}>
+    <div
+      className="custom_dropdown_wrapper"
+      ref={dropdownRef}
+      style={{ width: "250px" }}
+    >
       <div
         className="custom_dropdown_selected"
         onClick={() => setIsOpen(!isOpen)}

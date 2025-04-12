@@ -1,5 +1,3 @@
-import React from "react";
-
 const BehanceIcon = (props) => (
   <svg
     width="24"

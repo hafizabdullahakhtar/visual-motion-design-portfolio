@@ -1,5 +1,3 @@
-import React from "react";
-
 // SVG components
 const Icon1 = () => (
   <svg

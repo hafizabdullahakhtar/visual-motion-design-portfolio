@@ -1,4 +1,3 @@
-import React from "react";
 import projectsData from "../projectsData";
 import "./RelatedVideos.css";
 const getRandomVideos = (data, count) => {

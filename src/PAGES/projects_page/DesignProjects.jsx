@@ -1,8 +1,7 @@
-import React from "react";
 import "./ProjectsPage.css";
 
 const DesignProjects = () => {
-  return <></>;
+  return <div></div>;
 };
 
 export default DesignProjects;

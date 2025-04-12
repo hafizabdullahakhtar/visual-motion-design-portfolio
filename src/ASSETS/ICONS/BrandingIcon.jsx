@@ -1,5 +1,3 @@
-import React from "react";
-
 const BrandingIcon = (props) => (
   <svg
     class="w-6 h-6"

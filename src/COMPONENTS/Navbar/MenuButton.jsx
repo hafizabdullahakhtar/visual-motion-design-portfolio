@@ -1,4 +1,3 @@
-import React from "react";
 import "./MenuButton.css";
 import { motion } from "framer-motion";
 
@@ -9,8 +8,10 @@ const MenuButton = ({ isActive, setIsActive, selectedCategory }) => {
       className="nav-button"
       style={{
         borderRadius: isActive ? "2rem" : "1rem",
-        backgroundColor:isActive ? "var(--ui-border-color)" : "var(--background-color)",
-        width:!isActive ? "min-content" : "fit-content"
+        backgroundColor: isActive
+          ? "var(--ui-border-color)"
+          : "var(--background-color)",
+        width: !isActive ? "min-content" : "fit-content",
       }}
     >
       <motion.div

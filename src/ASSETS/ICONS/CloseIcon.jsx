@@ -1,5 +1,3 @@
-import React from "react";
-
 const CloseIcon = ({ color = "#292D32", size = 12 }) => (
   <svg
     width={size}

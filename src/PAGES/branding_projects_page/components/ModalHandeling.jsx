@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import { useState } from "react";
 import VideoModal from "./VideoModal";
 
 const ModalCtrl = () => {

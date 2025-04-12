@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./MotionProjects.css";
 import projectsData from "./projectsData";
 import VideoModal from "./components/VideoModal";

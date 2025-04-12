@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import josys from "../../ASSETS/VIDEOS/portfolio_videos/josys.mp4";
 import josysbanners from "../../ASSETS/VIDEOS/portfolio_videos/josys.png";
 
@@ -28,9 +27,6 @@ import tellmenowbanners from "../../ASSETS/VIDEOS/portfolio_videos/tellmenow.png
 
 import outreach from "../../ASSETS/VIDEOS/portfolio_videos/outreach.mp4";
 import outreachbanners from "../../ASSETS/VIDEOS/portfolio_videos/outreach.png";
-
-import lockdown from "../../ASSETS/VIDEOS/portfolio_videos/lockdown_poem.mp4";
-import lockdownbanners from "../../ASSETS/VIDEOS/portfolio_videos/lockdown.png";
 
 import easylama from "../../ASSETS/VIDEOS/portfolio_videos/easylama.mp4";
 import easylamabanners from "../../ASSETS/VIDEOS/portfolio_videos/easylama.png";
@@ -68,9 +64,6 @@ import fuegobanners from "../../ASSETS/VIDEOS/portfolio_videos/fuego.png";
 import lavit from "../../ASSETS/VIDEOS/portfolio_videos/lavit.mp4";
 import lavitbanners from "../../ASSETS/VIDEOS/portfolio_videos/lavit.png";
 
-import teamwear from "../../ASSETS/VIDEOS/portfolio_videos/teamwear.mp4";
-import teamwearbanners from "../../ASSETS/VIDEOS/portfolio_videos/teamwear.png";
-
 import spacetop from "../../ASSETS/VIDEOS/portfolio_videos/spacetop.mp4";
 import spacetopbanners from "../../ASSETS/VIDEOS/portfolio_videos/spacetop.png";
 
@@ -82,9 +75,6 @@ import telemetrybanners from "../../ASSETS/VIDEOS/portfolio_videos/telemetry.png
 
 import frontlead from "../../ASSETS/VIDEOS/portfolio_videos/frontlead.mp4";
 import frontleadbanners from "../../ASSETS/VIDEOS/portfolio_videos/frontlead.png";
-
-import rafiki from "../../ASSETS/VIDEOS/portfolio_videos/rafiki.mp4";
-import rafikibanners from "../../ASSETS/VIDEOS/portfolio_videos/rafiki.png";
 
 import procrastination from "../../ASSETS/VIDEOS/portfolio_videos/procrastination.mp4";
 import procrastinationbanners from "../../ASSETS/VIDEOS/portfolio_videos/procrastination.png";
@@ -278,8 +268,14 @@ const projectsData = [
     id: 11,
     category: "Animated Explainer",
     name: "PandaDoc Contracts",
-    banners: [pandadocbanners1, pandadocbanners2],
-    videos: [pandadoc1, pandadoc2],
+    banners: [
+      pandadocbanners1,
+      pandadocbanners2,
+      pandadocbanners3,
+      pandadocbanners4,
+      pandadocbanners5,
+    ],
+    videos: [pandadoc1, pandadoc2, pandadoc3, pandadoc4, pandadoc5],
     summary:
       "My goal was to showcase PandaDoc's streamlined approach to contract management. So, I highlighted how PandaDoc simplifies the contract preparation process by offering an extensive template library and easy customization options. The videos demonstrate features such as locking essential legal terms, enabling in-contract communication to reduce email exchanges, and seamless signing from any device. By focusing on PandaDoc's user-friendly interface, the videos emphasize how the platform transforms contract management into a straightforward, efficient experience.",
     role: [

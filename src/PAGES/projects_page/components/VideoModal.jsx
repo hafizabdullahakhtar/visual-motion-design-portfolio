@@ -1,14 +1,10 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef } from "react";
 import Plyr from "plyr";
 import "plyr/dist/plyr.css";
 import "./VideoModal.css";
-import Divider from "../../home_page/components/HeroDivs/effects_components/Modals/ProcessModal/components/Divider";
-import TickIcon from "../../../ASSETS/ICONS/TickIcon";
-import CloseIcon from "../../../ASSETS/ICONS/CloseIcon";
 import ActionButton from "../../home_page/components/ActionButton/ActionButton";
 import RelatedVideos from "./RelatedVideos";
-import projectsData from "../projectsData"; // Import the project data
 
 const VideoModal = ({ isOpen, onClose, project: initialProject }) => {
   const [project, setProject] = useState(initialProject || { videos: [] });

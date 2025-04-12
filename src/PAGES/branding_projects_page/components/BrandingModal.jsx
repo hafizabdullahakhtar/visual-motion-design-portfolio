@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./BrandingModal.css";
 import CloseIcon from "../../../ASSETS/ICONS/CloseIcon";
 import ActionButton from "../../home_page/components/ActionButton/ActionButton";
@@ -78,16 +78,21 @@ const BrandingModal = ({ isOpen, onClose, project: initialProject }) => {
               <div
                 key={index}
                 className="branding_modal_media_image"
-                style={{ height: "600px", display:"flex", justifyContent:"center", alignItems:"center" }}
+                style={{
+                  height: "600px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
               >
-                  <Lottie
-                    options={{
-                      animationData: item.src,
-                      loop: true,
-                      autoplay: true,
-                    }}
-                    width={item.size || 'auto'}
-                  />
+                <Lottie
+                  options={{
+                    animationData: item.src,
+                    loop: true,
+                    autoplay: true,
+                  }}
+                  width={item.size || "auto"}
+                />
               </div>
             </div>
           </>

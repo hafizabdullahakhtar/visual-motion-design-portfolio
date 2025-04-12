@@ -1,5 +1,3 @@
-import React from "react";
-
 // Replace with your actual SVG code for left and right arrows
 const leftArrowSVG = (
   <svg

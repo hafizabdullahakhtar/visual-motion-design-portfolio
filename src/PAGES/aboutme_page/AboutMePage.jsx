@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./AboutMePage.css";
 import AboutBackground from "./about_components/AboutBackground/AboutBackground";

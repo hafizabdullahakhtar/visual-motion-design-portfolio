@@ -1,5 +1,3 @@
-// HomePage.js
-import React from "react";
 import HeroDivs from "./components/HeroDivs/HeroDivs";
 import "./HomePage.css";
 import ActionButton from "./components/ActionButton/ActionButton";
@@ -27,7 +25,6 @@ const HomePage = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 

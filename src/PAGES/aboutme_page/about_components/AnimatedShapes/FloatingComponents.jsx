@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import avatar1 from "../../pic3.jpg";
 import avatar2 from "../../pic3.jpg";
 import avatar3 from "../../pic3.jpg";
 import avatar4 from "../../pic3.jpg";
 
-import "./FloatingComponents.css"
+import "./FloatingComponents.css";
 
 export const ExpandMode_01_CreativeCurious = () => {
   const [isCreative, setIsCreative] = useState(true);

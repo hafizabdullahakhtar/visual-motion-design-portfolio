@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useRef } from "react";
+import { useState, useRef } from "react";
 import "./SingleProject.css";
 import VolumeIcon from "../../../ASSETS/ICONS/VolumeIcon";
 

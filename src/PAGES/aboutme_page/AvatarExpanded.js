@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { animationSettings } from "./animationSettings";
 import IconComponent from "./about_components/icon_component/IconComponent";

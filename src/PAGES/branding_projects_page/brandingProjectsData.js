@@ -29,11 +29,7 @@ import pointFive_detection from "../../ASSETS/IMAGES/branding_projects/pointFive
 import pointFive_hero from "../../ASSETS/IMAGES/branding_projects/pointFive/Hero.json";
 import pointFive_logo from "../../ASSETS/IMAGES/branding_projects/pointFive/logo.json";
 import pointFive_new_actionread from "../../ASSETS/IMAGES/branding_projects/pointFive/new_actionread.json";
-import pointFive_new_cta from "../../ASSETS/IMAGES/branding_projects/pointFive/new_cta.json";
 import pointFive_new_deepwaste from "../../ASSETS/IMAGES/branding_projects/pointFive/new_deepwaste.json";
-import pointFive_new_hero from "../../ASSETS/IMAGES/branding_projects/pointFive/new_hero.json";
-import pointFive_new_hp from "../../ASSETS/IMAGES/branding_projects/pointFive/new_hp.json";
-import pointFive_new_hp2 from "../../ASSETS/IMAGES/branding_projects/pointFive/new_hp2.json";
 import pointFive_new_insights from "../../ASSETS/IMAGES/branding_projects/pointFive/new_insights.json";
 
 import soli_01 from "../../ASSETS/IMAGES/branding_projects/soli/1.png";

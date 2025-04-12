@@ -1,5 +1,3 @@
-import React from "react";
-
 const WhatsAppIcon = (props) => (
   <svg
     width="24"

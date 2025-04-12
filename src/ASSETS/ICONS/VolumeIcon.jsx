@@ -1,5 +1,3 @@
-import React from "react";
-
 const VolumeIcon = ({ isVolume, onClick }) => {
   const handleClick = (event) => {
     event.stopPropagation(); // Prevents the click from propagating to parent elements

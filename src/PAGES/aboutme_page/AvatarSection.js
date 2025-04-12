@@ -1,4 +1,3 @@
-import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { animationSettings } from "./animationSettings";
 import avatar from "./pic3.jpg";

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import MenuButton from "./MenuButton";
 import "./Navbar.css";
 import { motion, AnimatePresence } from "framer-motion";

@@ -1,21 +1,20 @@
 .nav-button {
-    height: 40px;
-    min-width: 100px;
-    padding: 0 16px;
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    overflow: visible; 
-    overflow-y: hidden;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--background-color);
-    color: var(--foreground-color);
-    z-index: 99999999999999999; /* Ensures it stays on top */
-    box-sizing: border-box;  /* Prevents padding and borders from affecting the width */
-  }
-
+  height: 40px;
+  min-width: 100px;
+  padding: 0 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: visible;
+  overflow-y: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
+  z-index: 99999999999999999; /* Ensures it stays on top */
+  box-sizing: border-box; /* Prevents padding and borders from affecting the width */
+}
 
 .nav-button .slider {
   position: relative;

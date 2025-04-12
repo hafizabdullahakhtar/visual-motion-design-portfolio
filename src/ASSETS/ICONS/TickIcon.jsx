@@ -1,5 +1,3 @@
-import React from "react";
-
 const TickIcon = (props) => (
   <svg width="17" height="17" viewBox="0 0 18 18" fill="none">
     <path

@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./COMPONENTS/footer/Footer";
@@ -23,10 +22,8 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/motion-projects" element={<MotionProjects />} />
-            <Route
-              path="/branding-projects"
-              element={<BrandingProjects />}
-            />
+            <Route path="/branding-projects" element={<BrandingProjects />} />
+            {/* <Route path="/design-projects" element={<DesignProjects />} /> */}
             <Route path="/store" element={<StorePage />} />
             <Route path="/about-me" element={<AboutMePage />} />
             <Route path="/experiments" element={<ExperimentsPage />} />
