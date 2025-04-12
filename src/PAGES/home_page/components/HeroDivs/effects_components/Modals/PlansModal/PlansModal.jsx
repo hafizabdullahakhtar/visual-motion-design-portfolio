@@ -1,98 +1,96 @@
-import React, { useState, useCallback } from "react";
 import Modal from "../Modal";
 import Checklist from "./components/CheckList/CheckList";
-import PricingBox from "./components/Pricing/PricingBox";
-import ButtonGroup from "./components/Dropdown/ButtonGroup";
-import CloseIcon from "../../../../../../../ASSETS/ICONS/CloseIcon";
-import pricingData from "./pricingData";
+// import PricingBox from "./components/Pricing/PricingBox";
+// import CloseIcon from "../../../../../../../ASSETS/ICONS/CloseIcon";
+// import pricingData from "./pricingData";
 import ExpandableCard from "../ServicesModal/components/ExpandableCard";
 
 const PlansModal = ({ onClose }) => {
-  const [selectedServices, setSelectedServices] = useState(["Branding"]);
+  // const [selectedServices, setSelectedServices] = useState(["Branding"]);
 
-  const handleSelectionChange = useCallback((selectedOptions) => {
-    if (selectedOptions.length === 0) {
-      selectedOptions = ["Branding"];
-    }
-    setSelectedServices(selectedOptions);
-  }, []);
+  // const handleSelectionChange = useCallback((selectedOptions) => {
+  //   if (selectedOptions.length === 0) {
+  //     selectedOptions = ["Branding"];
+  //   }
+  //   setSelectedServices(selectedOptions);
+  // }, []);
 
-  const removeService = (serviceToRemove) => {
-    const updatedServices = selectedServices.filter(
-      (service) => service !== serviceToRemove
-    );
-    handleSelectionChange(updatedServices);
-  };
+  // const removeService = (serviceToRemove) => {
+  //   const updatedServices = selectedServices.filter(
+  //     (service) => service !== serviceToRemove
+  //   );
+  //   handleSelectionChange(updatedServices);
+  // };
 
-  const renderPricingBoxes = () => (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column-reverse",
-        gap: "1rem",
-      }}
-    >
-      {selectedServices.map((service) => (
-        <div
-          key={service}
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            marginTop: "1rem",
-          }}
-        >
-          <div
-            className="service_heading"
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
-            <div
-              className="service-heading"
-              style={{
-                fontWeight: "bold",
-                marginBottom: "1rem",
-              }}
-            >
-              {service}
-            </div>
-            <div
-              className="close"
-              onClick={() => removeService(service)}
-              style={{ cursor: "pointer" }}
-            >
-              {selectedServices.length !== 1 && <CloseIcon />}
-            </div>
-          </div>
+  // const renderPricingBoxes = () => (
+  //   <div
+  //     style={{
+  //       display: "flex",
+  //       flexDirection: "column-reverse",
+  //       gap: "1rem",
+  //     }}
+  //   >
+  //     {selectedServices.map((service) => (
+  //       <div
+  //         key={service}
+  //         style={{
+  //           display: "flex",
+  //           flexDirection: "column",
+  //           marginTop: "1rem",
+  //         }}
+  //       >
+  //         <div
+  //           className="service_heading"
+  //           style={{
+  //             display: "flex",
+  //             justifyContent: "space-between",
+  //             alignItems: "center",
+  //           }}
+  //         >
+  //           <div
+  //             className="service-heading"
+  //             style={{
+  //               fontWeight: "bold",
+  //               marginBottom: "1rem",
+  //             }}
+  //           >
+  //             {service}
+  //           </div>
+  //           <div
+  //             className="close"
+  //             onClick={() => removeService(service)}
+  //             style={{ cursor: "pointer" }}
+  //           >
+  //             {selectedServices.length !== 1 && <CloseIcon />}
+  //           </div>
+  //         </div>
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "row",
+  //         <div
+  //           style={{
+  //             display: "flex",
+  //             flexDirection: "row",
 
-              gap: "1rem",
-              overflowX: "auto",
-              width: "100%",
-              flexWrap: "wrap",
-            }}
-          >
-            {pricingData[service]?.map((plan) => (
-              <PricingBox
-                key={`${service}-${plan.pricingTag}`}
-                pricingTag={plan.pricingTag}
-                price={plan.price}
-                priceUnit={plan.priceUnit}
-                description={plan.description}
-                color={plan.color}
-              />
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
+  //             gap: "1rem",
+  //             overflowX: "auto",
+  //             width: "100%",
+  //             flexWrap: "wrap",
+  //           }}
+  //         >
+  //           {pricingData[service]?.map((plan) => (
+  //             <PricingBox
+  //               key={`${service}-${plan.pricingTag}`}
+  //               pricingTag={plan.pricingTag}
+  //               price={plan.price}
+  //               priceUnit={plan.priceUnit}
+  //               description={plan.description}
+  //               color={plan.color}
+  //             />
+  //           ))}
+  //         </div>
+  //       </div>
+  //     ))}
+  //   </div>
+  // );
 
   return (
     <Modal
