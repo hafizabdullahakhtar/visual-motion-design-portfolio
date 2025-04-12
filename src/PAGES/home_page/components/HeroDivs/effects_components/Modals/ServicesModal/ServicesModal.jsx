@@ -6,7 +6,6 @@ import Modal from "../Modal";
 import ExpandableCard from "./components/ExpandableCard";
 import BrandSprintProcess from "./BrandingService/BrandSprintProcess";
 import ExpandHeader from "./components/ExpandHeader";
-import RapidBrandKit from "./BrandingService/RapidBrandKit";
 import ExplainerProcess from "./MotionService/ExplanierProcess";
 import BrandSprintGuide from "./BrandingService/BrandSprintGuide";
 

@@ -1,4 +1,3 @@
-import React from "react";
 import ExpandableCard from "../components/ExpandableCard";
 
 function RapidBrandKit() {
