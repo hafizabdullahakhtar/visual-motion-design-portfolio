@@ -26,7 +26,7 @@ const BrandingModal = ({ isOpen, onClose, project: initialProject }) => {
               <img
                 key={index}
                 src={item.src}
-                alt={`${project.name} image ${index + 1}`}
+                alt={`${project.name} ${index + 1}`}
                 className="branding_modal_media_image"
               />
             </div>
