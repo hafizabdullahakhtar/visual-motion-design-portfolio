@@ -1,4 +1,8 @@
+import usePageTitle from "../../usePageTitle";
+
 const StorePage = () => {
+  usePageTitle("About | Visual Motion Design");
+
   return (
     <div
       style={{

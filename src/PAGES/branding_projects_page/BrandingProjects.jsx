@@ -3,8 +3,11 @@ import "./BrandingProjects.css";
 import brandingProjectsData from "./brandingProjectsData";
 import SingleProject from "./components/SingleProject";
 import BrandingModal from "./components/BrandingModal";
+import usePageTitle from "../../usePageTitle";
 
 const BrandingProjects = () => {
+  usePageTitle("Abdullah | Brand Identity Design");
+
   const [selectedProject, setSelectedProject] = useState(null);
 
   // Function to handle the project click

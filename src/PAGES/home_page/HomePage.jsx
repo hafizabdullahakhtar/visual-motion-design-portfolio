@@ -1,8 +1,11 @@
 import HeroDivs from "./components/HeroDivs/HeroDivs";
 import "./HomePage.css";
 import ActionButton from "./components/ActionButton/ActionButton";
+import usePageTitle from "../../usePageTitle";
 
 const HomePage = () => {
+  usePageTitle("Abdullah | Visual Motion Design");
+
   return (
     <div className="homepage-container">
       <div className="hero">

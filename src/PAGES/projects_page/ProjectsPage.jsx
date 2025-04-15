@@ -1,15 +1,9 @@
-/* eslint-disable no-unused-vars */
-import React from "react";
-import { useNavigate } from "react-router-dom";
 import "./ProjectsPage.css";
 import MotionProjects from "./MotionProjects";
+import usePageTitle from "../../usePageTitle";
 
 const ProjectsPage = () => {
-  const navigate = useNavigate();
-
-  const handleNavigation = (path) => {
-    navigate(path);
-  };
+  usePageTitle("Abdullah | Motion Design");
 
   return (
     <div className="projects_page">

@@ -8,9 +8,12 @@ import AvatarSection from "./AvatarSection";
 import AvatarExpanded from "./AvatarExpanded";
 import { motion } from "framer-motion";
 import IconList from "./about_components/icon_list_component/IconList";
+import usePageTitle from "../../usePageTitle";
 // import GLBViewer from "./GLBViewer";
 
 const AboutMePage = () => {
+  usePageTitle("Abdullah | About");
+
   const [expanded, setExpanded] = useState(false);
   const [showProfessional, setshowProfessional] = useState(false);
   const [personalTime, setPersonalTime] = useState(false);
