@@ -1,0 +1,20 @@
+.showcase_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid var(--ui-border-color);
+  width: fit-content;
+  border-radius: 1rem;
+}
+
+.showcase_title {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.showcase_description {
+  font-size: 16px;
+  font-weight: 100;
+}

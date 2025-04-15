@@ -1,0 +1,42 @@
+.motion_page {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+  height: auto;
+  width: 100vw;
+  /* overflow-y: auto; */
+  background: var(--background-gradient);
+  z-index: 1;
+  overflow: hidden;
+}
+
+.motion_page::after {
+  background-color: var(--bottom-gradient-light);
+}
+
+.motion_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  width: fit-content;
+  gap: 1rem;
+}
+
+
+/* Responsive styles */
+@media (max-width: 760px) {
+  .motion_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    width: fit-content;
+    gap: 1rem;
+  }
+}

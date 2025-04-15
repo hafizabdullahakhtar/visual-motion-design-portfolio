@@ -1,0 +1,32 @@
+.pricing {
+  border: 1px solid var(--grey-color);
+  border-radius: 16px;
+  padding: 1.3rem;
+  width: 100%;
+  min-width: 137px;
+  max-width: calc(50% - 51.2px);
+}
+
+.pricingtag {
+  padding: 4px 12px;
+  border-radius: 20px;
+  width: fit-content;
+  font-size: 12px;
+}
+
+.price {
+  font-size: 16px;
+  font-weight: 700;
+  padding-block: 1.2rem;
+}
+
+.price span {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-sec);
+}
+
+.pricing_description {
+  color: var(--text-sec);
+  font-size: 16px;
+}
